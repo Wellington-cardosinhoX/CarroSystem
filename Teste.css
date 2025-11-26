@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(10, 10, 10);
+    color: white;
+}
+
+
+/* Seção do navbar */
+.navbar {
+    height: 70px;
+    background-color: rgb(55, 54, 54);
+    color: white;
+    padding: 0 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 25px;
+    color: yellow;
+    font-weight: bold;
+}
+
+.navbar a {
+    text-decoration:  none;
+    display: inline-block;
+    margin-left: 23px;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+    .navbar a:hover {
+    transform: scale(1.05) translateY(-5px);
+    color: blue;
+}
+
+.hero {
+    height: 70vh;
+    color: white;
+    background: url('https://wallpapercave.com/wp/wp9225958.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-content .sub {
+    letter-spacing: 2px;
+    color: darkgrey;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    font-weight: 500;
+    margin: 15px 0;
+}
+
+.hero-content .desc {
+    margin-bottom: 25px;
+}
+
+.btn1 {
+    padding: 14px 16px;
+    border-radius: 10px;
+    color: rgb(19, 18, 18);
+    background-color: yellow;
+    border: none;
+}
+
+.colecao {
+    padding: 60px;
+    text-align: center;
+}
+
+.colecao h3 {
+    font-size: 18px;
+    color: #d4a017;
+}
+
+.colecao h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+    margin-top: 40px;
+}
+
+.card {
+    background-color: black;
+    color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.5);
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    animation: pulseGlow 1.3s infinite alternate;
+}
+
+@keyframes pulseGlow {
+    0% {
+        box-shadow: 0 0 15px #008cff80, 0 0 30px #008cff40;
+    }
+    100% {
+        box-shadow: 0 0 21px #008cff, 0 0 45px #008cff80;
+    }
+}
+
+.car-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.status {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+}
+
+.disponivel {
+    background-color: #28c940;
+}
+
+.esgotado {
+    background-color: #e03131;
+}
+
+.content {
+    padding: 18px;
+    background-color: #0a0a0a;
+}
+
+.brand {
+    display: flex;
+    justify-content: flex-start;
+    color: #ffdd55;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.model {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 2px;
+    font-size: 22px;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 15px 0;
+    font-size: 14px;
+    opacity: 0.85;
+}
+
+.separator {
+    height: 2px;
+    background-color: rgb(27, 27, 27);
+    margin: 15px 0;
+}
+
+.price-label {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 30px;
+    margin-bottom: 10px;
+    opacity: 0.7;
+}
+
+.price {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffdd55;
+}
+
+.contato {
+    margin-top: 2px;
+    padding: 60px;
+    text-align: center;
+    background-color: #111;
+}
+
+.contato-grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.item-circle {
+    width: 60px;
+    height: 60px;
+    background-color: #bfce1d;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px auto;
+}
+
+.item-circle i {
+    color: rgb(0, 0, 0);
+}
+
+.footer {
+    text-align: center;
+    background-color: #1f1f1f;
+    color: #ccc;
+    padding: 10px 0 5px 0;
+}
+
+    
