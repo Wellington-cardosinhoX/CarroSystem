@@ -37,8 +37,8 @@ body {
 }
 
     .navbar a:hover {
-    transform: scale(1.05) translateY(-5px);
-    color: blue;
+    transform: scale(1.05) translateY(-3px);
+    color: rgb(255, 196, 0);
 }
 
 .hero {
