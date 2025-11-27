@@ -10,8 +10,6 @@ body {
     color: white;
 }
 
-
-/* Seção do navbar */
 .navbar {
     height: 70px;
     background-color: rgb(55, 54, 54);
@@ -62,6 +60,11 @@ body {
 .hero-content .sub {
     letter-spacing: 2px;
     color: darkgrey;
+    font-size: 24px;
+}
+
+.hero-content .sub2 {
+    font-size: 64px;
 }
 
 .hero-content h1 {
@@ -72,6 +75,8 @@ body {
 
 .hero-content .desc {
     margin-bottom: 25px;
+    font-style: italic;
+    font-size: 17px;
 }
 
 .btn1 {
