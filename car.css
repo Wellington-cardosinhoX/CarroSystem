@@ -12,7 +12,7 @@ body {
 
 .navbar {
     height: 70px;
-    background-color: rgb(55, 54, 54);
+    background-color: rgb(27, 23, 23);
     color: white;
     padding: 0 35px;
     display: flex;
@@ -37,6 +37,24 @@ body {
     .navbar a:hover {
     transform: scale(1.05) translateY(-3px);
     color: rgb(255, 196, 0);
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.tagline {
+    font-size: 13px;
+    opacity: 0.7;
+    margin-top: 2px;
 }
 
 .hero {
@@ -87,6 +105,208 @@ body {
     border: none;
 }
 
+.sobre {
+    padding: 65px 60px;
+    background-color: #0a0a0a;
+    text-align: center;
+}
+
+.sobre-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.sobre-sub {
+    color: #d4a017;
+    font-size: 27px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.sobre-title {
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.sobre-text {
+    font-size: 23px;
+    color: #dcdcdc;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    opacity: 0.85;
+}
+
+.sobre-highlight {
+    color: #ffdd55;
+    font-weight: bold;
+}
+
+.btn-sobre {
+    margin-top: 15px;
+    padding: 12px 25px;
+    background-color: yellow;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn-sobre:hover {
+    transform: scale(1.05) translateY(-3px);
+    background-color: #ffea2e;
+}
+
+.depoimentos {
+    padding: 80px 60px;
+    text-align: center;
+}
+
+.depoimentos h2 {
+    font-size: 40px;
+    color: #ffdd55;
+    margin-bottom: 50px;
+}
+
+.depoimentos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 35px;
+}
+
+.dep-card {
+    background-color: #111;
+    padding: 35px 25px;
+    border-radius: 18px;
+    box-shadow: 0px 0px 25px rgba(255, 221, 85, 0.15);
+    transition: all 0.3s ease-in-out;
+}
+
+.dep-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 0px 35px rgba(255, 221, 85, 0.25);
+}
+
+.quote {
+    font-size: 32px;
+    color: #ffdd55;
+    margin-bottom: 15px;
+}
+
+.dep-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    opacity: 0.85;
+    margin-bottom: 20px;
+}
+
+.dep-card h3 {
+    font-size: 18px;
+    color: #ffdd55;
+    font-weight: bold;
+}
+
+.contato {
+    padding: 90px 60px;
+    background: radial-gradient(circle at left, rgba(255, 174, 0, 0.55), transparent 40%);
+    text-align: center;
+}
+
+.contato h2 {
+    font-size: 40px;
+    color: #ffdd55;
+    margin-bottom: 10px;
+}
+
+.contato-sub {
+    opacity: 0.8;
+    margin-bottom: 50px;
+}
+
+.contato-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.contato-form {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 35px;
+    border-radius: 20px;
+    width: 600px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 221, 85, 0.15);
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+    color: #ffdd55;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #111;
+    border: 1px solid #333;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 15px;
+    resize: none;
+    transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #ffdd55;
+    outline: none;
+}
+
+.contato {
+    background-color: #1f1f1f08;
+}
+
+.btn-contato {
+    width: 100%;
+    padding: 14px;
+    background-color: #ffdd55;
+    color: #000;
+    border: none;
+    border-radius: 12px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-contato:hover {
+    transform: scale(1.05) translateY(-3px);
+    background-color: #ffe680;
+}
+
+.contato-info {
+    max-width: 300px;
+    text-align: left;
+}
+
+.contato-info h3 {
+    color: #ffdd55;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.contato-info p {
+    margin-bottom: 12px;
+    opacity: 0.85;
+}
+
 .colecao {
     padding: 60px;
     text-align: center;
@@ -126,10 +346,10 @@ body {
 
 @keyframes pulseGlow {
     0% {
-        box-shadow: 0 0 15px #008cff80, 0 0 30px #008cff40;
+        box-shadow: 0 0 15px #c3d33480, 0 0 30px #d9e71640;
     }
     100% {
-        box-shadow: 0 0 21px #008cff, 0 0 45px #008cff80;
+        box-shadow: 0 0 21px #c1d169, 0 0 45px #cdd46380;
     }
 }
 
@@ -246,4 +466,6 @@ body {
     padding: 10px 0 5px 0;
 }
 
-    
+
+
+
