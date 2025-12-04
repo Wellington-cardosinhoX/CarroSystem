@@ -237,6 +237,16 @@ body {
     width: 600px;
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 221, 85, 0.15);
+    animation: pulseGlow 1.3s infinite alternate;
+}
+
+@keyframes pulseGlow {
+    0% {
+        box-shadow: 0 0 15px #dbf11780, 0 0 30px #e3f30740;
+    }
+    100% {
+        box-shadow: 0 0 21px #d3d619, 0 0 45px #c2cd2c80;
+    }
 }
 
 .form-group {
